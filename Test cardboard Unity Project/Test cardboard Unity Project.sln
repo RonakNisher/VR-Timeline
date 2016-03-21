@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test cardboard Unity Project.CSharp", "Test cardboard Unity Project.CSharp.csproj", "{3EF4D3DB-9F95-781B-45E6-120507B7558D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test cardboard Unity Project.CSharp.Editor", "Test cardboard Unity Project.CSharp.Editor.csproj", "{A9927B3D-6EBA-DA99-3CF1-EEF040B9D43C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3EF4D3DB-9F95-781B-45E6-120507B7558D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EF4D3DB-9F95-781B-45E6-120507B7558D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EF4D3DB-9F95-781B-45E6-120507B7558D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EF4D3DB-9F95-781B-45E6-120507B7558D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9927B3D-6EBA-DA99-3CF1-EEF040B9D43C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9927B3D-6EBA-DA99-3CF1-EEF040B9D43C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9927B3D-6EBA-DA99-3CF1-EEF040B9D43C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9927B3D-6EBA-DA99-3CF1-EEF040B9D43C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
