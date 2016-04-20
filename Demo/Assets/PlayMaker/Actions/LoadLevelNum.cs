@@ -60,7 +60,7 @@ namespace HutongGames.PlayMaker.Actions
 #if UNITY_PRE_5_3
                 Application.LoadLevel(levelIndex.Value);
 #else
-                SceneManager.LoadScene(levelIndex.Value);
+                SceneManager.LoadScene(levelIndex.Value, LoadSceneMode.Single);
 #endif
             }
 

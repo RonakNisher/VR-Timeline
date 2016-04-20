@@ -6,7 +6,7 @@ using System.Collections;
 
 namespace HutongGames.PlayMakerEditor
 {
-    [CustomActionEditor(typeof (MoveTowards))]
+    [CustomActionEditor(typeof(HutongGames.PlayMaker.Actions.MoveTowards))]
     public class MoveTowardsActionEditor : CustomActionEditor
     {
         public override bool OnGUI()

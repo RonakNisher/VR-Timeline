@@ -60,7 +60,7 @@ namespace HutongGames.PlayMaker.Actions
 #if UNITY_PRE_5_3
                     asyncOperation = Application.LoadLevelAdditiveAsync(levelName.Value);
 #else
-				    asyncOperation = SceneManager.LoadSceneAsync(levelName.Value);
+				    asyncOperation = SceneManager.LoadSceneAsync(levelName.Value, LoadSceneMode.Additive);
 #endif
 
                     Debug.Log("LoadLevelAdditiveAsyc: " + levelName.Value);
@@ -82,7 +82,7 @@ namespace HutongGames.PlayMaker.Actions
 #if UNITY_PRE_5_3
                     asyncOperation = Application.LoadLevelAsync(levelName.Value);
 #else
-                    asyncOperation = SceneManager.LoadSceneAsync(levelName.Value);
+                    asyncOperation = SceneManager.LoadSceneAsync(levelName.Value, LoadSceneMode.Single);
 #endif
                     Debug.Log("LoadLevelAsync: " + levelName.Value);
 
@@ -93,7 +93,7 @@ namespace HutongGames.PlayMaker.Actions
 #if UNITY_PRE_5_3
                     Application.LoadLevel(levelName.Value);
 #else
-                    SceneManager.LoadScene(levelName.Value);
+                    SceneManager.LoadScene(levelName.Value, LoadSceneMode.Single);
 #endif
                     Debug.Log("LoadLevel: " + levelName.Value);
                 }

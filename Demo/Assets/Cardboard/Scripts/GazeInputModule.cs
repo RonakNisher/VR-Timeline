@@ -22,6 +22,7 @@
 
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 /// @ingroup Scripts
 /// This script provides an implemention of Unity's `BaseInputModule` class, so
@@ -134,7 +135,39 @@ public class GazeInputModule : BaseInputModule {
     }
   }
   /// @endcond
-
+	/// 
+	/// 
+	/// 
+	float currentLookAtHandlerClickTime;
+//	void HandleSelection()
+//	{
+//		GameObject currentGazeObject = GetCurrentGameObject(); // Get the gaze target
+//
+//
+//		if (pointerData.pointerEnter != null)
+//		{
+//			// if the ui receiver has changed, reset the gaze delay timer
+//			GameObject handler = ExecuteEvents.GetEventHandler<IPointerClickHandler>(pointerData.pointerEnter);
+//			if (currentGazeObject != handler)
+//			{
+//				currentGazeObject = handler;
+//				currentLookAtHandlerClickTime = Time.realtimeSinceStartup + 5;
+//			}
+//
+//			// if we have a handler and it's time to click, do it now
+//			if (currentGazeObject != null &&
+//				(mode == Mode.Gaze && Time.realtimeSinceStartup > currentLookAtHandlerClickTime) ||
+//				(mode == Mode.Click && Input.GetButtonDown(ClickInputName)))
+//			{
+//				ExecuteEvents.ExecuteHierarchy(currentLookAtHandler, pointerEventData, ExecuteEvents.pointerClickHandler);
+//				currentLookAtHandlerClickTime = float.MaxValue;
+//			}
+//		}
+//		else
+//		{
+//			currentLookAtHandler = null;
+//		}
+//	}
   private void CastRayFromGaze() {
     Vector2 headPose = NormalizedCartesianToSpherical(Cardboard.SDK.HeadPose.Orientation * Vector3.forward);
 
@@ -168,6 +201,9 @@ public class GazeInputModule : BaseInputModule {
     }
   }
 
+	int timer = 0;
+	public int MAX_TIME = 120;
+
   void UpdateReticle(GameObject previousGazedObject) {
     if (cardboardPointer == null) {
       return;
@@ -180,14 +216,44 @@ public class GazeInputModule : BaseInputModule {
     if (currentGazeObject == previousGazedObject) {
       if (currentGazeObject != null) {
         cardboardPointer.OnGazeStay(camera, currentGazeObject, intersectionPosition);
+
+//				float a = 15;
+//				Vector3 position =  currentGazeObject.transform.position;
+//				position.y -= a;
+//				currentGazeObject.transform.position = position;
+				//currentGazeObject.SetActive(false);
+				//Debug.Log(currentGazeObject.transform.parent.tag);
+
+				if (currentGazeObject.transform.parent.tag == "button") {
+					if (timer == MAX_TIME) {
+						//Debug.Log(timer);
+						//Debug.Log (MAX_TIME);
+						currentGazeObject.GetComponentInParent<Button> ().onClick.Invoke ();
+					}
+					timer++;
+
+					//Debug.Log(currentGazeObject.GetComponentsInChildren<Button>());
+				}
+		
       }
     } else {
+			
+	  timer = 0;
+			//Debug.Log(timer);
       if (previousGazedObject != null) {
         cardboardPointer.OnGazeExit(camera, previousGazedObject);
+//				if (previousGazedObject.transform.parent.tag == "button") {
+//					previousGazedObject.GetComponentInParent<Button> ().onClick.Invoke ();
+//				}
+		
       }
 
       if (currentGazeObject != null) {
         cardboardPointer.OnGazeStart(camera, currentGazeObject, intersectionPosition);
+
+//				if (currentGazeObject.transform.parent.tag == "button") {
+//					currentGazeObject.GetComponentInParent<Button> ().onClick.Invoke ();
+//				}
       }
     }
   }

@@ -19,7 +19,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_3_4;UNITY_5_3;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;ENABLE_RUNTIME_GI;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_NETWORK;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;ENABLE_TEXTUREID_MAP;PLAYERCONNECTION_LISTENS_FIXED_PORT;DEBUGGER_LISTENS_FIXED_PORT;PLATFORM_SUPPORTS_ADS_ID;SUPPORT_ENVIRONMENT_VARIABLES;PLATFORM_SUPPORTS_PROFILER;PLATFORM_HAS_NO_SUPPORT_FOR_BUCKET_ALLOCATOR;STRICTCPP_NEW_DELETE_SIGNATURES;WWW_USE_CURL;HAS_NEON_SKINNIG;UNITY_INPUT_SIMULATE_EVENTS;PLATFORM_ALWAYS_USES_STDOUT_FOR_LOG;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;UNITY_IOS;UNITY_IPHONE;UNITY_IPHONE_API;SUPPORT_MULTIPLE_DISPLAYS;ENABLE_IL2CPP;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_IOS_ON_DEMAND_RESOURCES;ENABLE_IOS_APP_SLICING</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_3_4;UNITY_5_3;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;PLATFORM_SUPPORTS_ADS_ID;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;PLAYMAKER;PLAYMAKER_1_8</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -38,10 +38,10 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEngine">
-      <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -101,11 +101,29 @@
      <Compile Include="Assets\PlayMaker\Actions\AnyKey.cs" />
      <Compile Include="Assets\PlayMaker\Actions\ApplicationQuit.cs" />
      <Compile Include="Assets\PlayMaker\Actions\ApplicationRunInBackground.cs" />
+     <Compile Include="Assets\PlayMaker\Actions\Array\ArrayAdd.cs" />
+     <Compile Include="Assets\PlayMaker\Actions\Array\ArrayAddRange.cs" />
+     <Compile Include="Assets\PlayMaker\Actions\Array\ArrayClear.cs" />
+     <Compile Include="Assets\PlayMaker\Actions\Array\ArrayContains.cs" />
+     <Compile Include="Assets\PlayMaker\Actions\Array\ArrayDeleteAt.cs" />
+     <Compile Include="Assets\PlayMaker\Actions\Array\ArrayForEach.cs" />
+     <Compile Include="Assets\PlayMaker\Actions\Array\ArrayGet.cs" />
+     <Compile Include="Assets\PlayMaker\Actions\Array\ArrayGetNext.cs" />
+     <Compile Include="Assets\PlayMaker\Actions\Array\ArrayGetRandom.cs" />
+     <Compile Include="Assets\PlayMaker\Actions\Array\ArrayLength.cs" />
+     <Compile Include="Assets\PlayMaker\Actions\Array\ArrayResize.cs" />
+     <Compile Include="Assets\PlayMaker\Actions\Array\ArrayReverse.cs" />
+     <Compile Include="Assets\PlayMaker\Actions\Array\ArraySet.cs" />
+     <Compile Include="Assets\PlayMaker\Actions\Array\ArrayShuffle.cs" />
+     <Compile Include="Assets\PlayMaker\Actions\Array\ArraySort.cs" />
+     <Compile Include="Assets\PlayMaker\Actions\Array\ArrayTransferValue.cs" />
+     <Compile Include="Assets\PlayMaker\Actions\Array\FsmArraySet.cs" />
      <Compile Include="Assets\PlayMaker\Actions\AudioMute.cs" />
      <Compile Include="Assets\PlayMaker\Actions\AudioPause.cs" />
      <Compile Include="Assets\PlayMaker\Actions\AudioPlay.cs" />
      <Compile Include="Assets\PlayMaker\Actions\AudioStop.cs" />
      <Compile Include="Assets\PlayMaker\Actions\AxisEvent.cs" />
+     <Compile Include="Assets\PlayMaker\Actions\BaseLogAction.cs" />
      <Compile Include="Assets\PlayMaker\Actions\BlendAnimation.cs" />
      <Compile Include="Assets\PlayMaker\Actions\Blink.cs" />
      <Compile Include="Assets\PlayMaker\Actions\BoolAllTrue.cs" />
@@ -118,6 +136,7 @@
      <Compile Include="Assets\PlayMaker\Actions\BroadcastEvent.cs" />
      <Compile Include="Assets\PlayMaker\Actions\BuildString.cs" />
      <Compile Include="Assets\PlayMaker\Actions\CallMethod.cs" />
+     <Compile Include="Assets\PlayMaker\Actions\CallStaticMethod.cs" />
      <Compile Include="Assets\PlayMaker\Actions\CameraFadeIn.cs" />
      <Compile Include="Assets\PlayMaker\Actions\CameraFadeOut.cs" />
      <Compile Include="Assets\PlayMaker\Actions\CapturePoseAsAnimationClip.cs" />
@@ -134,17 +153,20 @@
      <Compile Include="Assets\PlayMaker\Actions\ConvertBoolToFloat.cs" />
      <Compile Include="Assets\PlayMaker\Actions\ConvertBoolToInt.cs" />
      <Compile Include="Assets\PlayMaker\Actions\ConvertBoolToString.cs" />
+     <Compile Include="Assets\PlayMaker\Actions\ConvertEnumToString.cs" />
      <Compile Include="Assets\PlayMaker\Actions\ConvertFloatToInt.cs" />
      <Compile Include="Assets\PlayMaker\Actions\ConvertFloatToString.cs" />
      <Compile Include="Assets\PlayMaker\Actions\ConvertIntToFloat.cs" />
      <Compile Include="Assets\PlayMaker\Actions\ConvertIntToString.cs" />
      <Compile Include="Assets\PlayMaker\Actions\ConvertMaterialToObject.cs" />
+     <Compile Include="Assets\PlayMaker\Actions\ConvertSecondsToString.cs" />
      <Compile Include="Assets\PlayMaker\Actions\ConvertStringToInt.cs" />
      <Compile Include="Assets\PlayMaker\Actions\CreateEmptyObject.cs" />
      <Compile Include="Assets\PlayMaker\Actions\CreateObject.cs" />
      <Compile Include="Assets\PlayMaker\Actions\CutToCamera.cs" />
      <Compile Include="Assets\PlayMaker\Actions\DebugBool.cs" />
      <Compile Include="Assets\PlayMaker\Actions\DebugDrawShape.cs" />
+     <Compile Include="Assets\PlayMaker\Actions\DebugEnum.cs" />
      <Compile Include="Assets\PlayMaker\Actions\DebugFloat.cs" />
      <Compile Include="Assets\PlayMaker\Actions\DebugFsmVariable.cs" />
      <Compile Include="Assets\PlayMaker\Actions\DebugGameObject.cs" />
@@ -154,6 +176,7 @@
      <Compile Include="Assets\PlayMaker\Actions\DebugVector3.cs" />
      <Compile Include="Assets\PlayMaker\Actions\DestroyComponent.cs" />
      <Compile Include="Assets\PlayMaker\Actions\DestroyObject.cs" />
+     <Compile Include="Assets\PlayMaker\Actions\DestroyObjects.cs" />
      <Compile Include="Assets\PlayMaker\Actions\DestroySelf.cs" />
      <Compile Include="Assets\PlayMaker\Actions\DetachChildren.cs" />
      <Compile Include="Assets\PlayMaker\Actions\DetectDeviceOrientation.cs" />
@@ -172,6 +195,8 @@
      <Compile Include="Assets\PlayMaker\Actions\EnableFSM.cs" />
      <Compile Include="Assets\PlayMaker\Actions\EnableFog.cs" />
      <Compile Include="Assets\PlayMaker\Actions\EnableGUI.cs" />
+     <Compile Include="Assets\PlayMaker\Actions\EnumCompare.cs" />
+     <Compile Include="Assets\PlayMaker\Actions\EnumSwitch.cs" />
      <Compile Include="Assets\PlayMaker\Actions\Explosion.cs" />
      <Compile Include="Assets\PlayMaker\Actions\FindChild.cs" />
      <Compile Include="Assets\PlayMaker\Actions\FindClosest.cs" />
@@ -266,6 +291,7 @@
      <Compile Include="Assets\PlayMaker\Actions\GetEventInfo.cs" />
      <Compile Include="Assets\PlayMaker\Actions\GetFsmBool.cs" />
      <Compile Include="Assets\PlayMaker\Actions\GetFsmColor.cs" />
+     <Compile Include="Assets\PlayMaker\Actions\GetFsmEnum.cs" />
      <Compile Include="Assets\PlayMaker\Actions\GetFsmFloat.cs" />
      <Compile Include="Assets\PlayMaker\Actions\GetFsmGameObject.cs" />
      <Compile Include="Assets\PlayMaker\Actions\GetFsmInt.cs" />
@@ -353,6 +379,7 @@
      <Compile Include="Assets\PlayMaker\Actions\MouseLook2.cs" />
      <Compile Include="Assets\PlayMaker\Actions\MousePick.cs" />
      <Compile Include="Assets\PlayMaker\Actions\MousePickEvent.cs" />
+     <Compile Include="Assets\PlayMaker\Actions\MoveObject.cs" />
      <Compile Include="Assets\PlayMaker\Actions\MovePosition.cs" />
      <Compile Include="Assets\PlayMaker\Actions\MoveTowards.cs" />
      <Compile Include="Assets\PlayMaker\Actions\MovieTextureAudioSettings.cs" />
@@ -429,8 +456,11 @@
      <Compile Include="Assets\PlayMaker\Actions\RandomEvent.cs" />
      <Compile Include="Assets\PlayMaker\Actions\RandomFloat.cs" />
      <Compile Include="Assets\PlayMaker\Actions\RandomInt.cs" />
+     <Compile Include="Assets\PlayMaker\Actions\RandomWait.cs" />
      <Compile Include="Assets\PlayMaker\Actions\Raycast.cs" />
+     <Compile Include="Assets\PlayMaker\Actions\RaycastAll.cs" />
      <Compile Include="Assets\PlayMaker\Actions\RectContains.cs" />
+     <Compile Include="Assets\PlayMaker\Actions\RectOverlaps.cs" />
      <Compile Include="Assets\PlayMaker\Actions\RemoveMixingTransform.cs" />
      <Compile Include="Assets\PlayMaker\Actions\ResetGUIMatrix.cs" />
      <Compile Include="Assets\PlayMaker\Actions\ResetInputAxes.cs" />
@@ -439,6 +469,7 @@
      <Compile Include="Assets\PlayMaker\Actions\Rotate.cs" />
      <Compile Include="Assets\PlayMaker\Actions\RotateGUI.cs" />
      <Compile Include="Assets\PlayMaker\Actions\RunFSM.cs" />
+     <Compile Include="Assets\PlayMaker\Actions\RunFSMAction.cs" />
      <Compile Include="Assets\PlayMaker\Actions\SampleCurve.cs" />
      <Compile Include="Assets\PlayMaker\Actions\ScaleGUI.cs" />
      <Compile Include="Assets\PlayMaker\Actions\ScaleTime.cs" />
@@ -470,6 +501,7 @@
      <Compile Include="Assets\PlayMaker\Actions\SetColorRGBA.cs" />
      <Compile Include="Assets\PlayMaker\Actions\SetColorValue.cs" />
      <Compile Include="Assets\PlayMaker\Actions\SetDrag.cs" />
+     <Compile Include="Assets\PlayMaker\Actions\SetEnumValue.cs" />
      <Compile Include="Assets\PlayMaker\Actions\SetEventData.cs" />
      <Compile Include="Assets\PlayMaker\Actions\SetEventTarget.cs" />
      <Compile Include="Assets\PlayMaker\Actions\SetFlareStrength.cs" />
@@ -478,6 +510,7 @@
      <Compile Include="Assets\PlayMaker\Actions\SetFogDensity.cs" />
      <Compile Include="Assets\PlayMaker\Actions\SetFsmBool.cs" />
      <Compile Include="Assets\PlayMaker\Actions\SetFsmColor.cs" />
+     <Compile Include="Assets\PlayMaker\Actions\SetFsmEnum.cs" />
      <Compile Include="Assets\PlayMaker\Actions\SetFsmFloat.cs" />
      <Compile Include="Assets\PlayMaker\Actions\SetFsmGameObject.cs" />
      <Compile Include="Assets\PlayMaker\Actions\SetFsmInt.cs" />
@@ -555,6 +588,8 @@
      <Compile Include="Assets\PlayMaker\Actions\StopAnimation.cs" />
      <Compile Include="Assets\PlayMaker\Actions\StopLocationServiceUpdates.cs" />
      <Compile Include="Assets\PlayMaker\Actions\StopMovieTexture.cs" />
+     <Compile Include="Assets\PlayMaker\Actions\String\StringJoin.cs" />
+     <Compile Include="Assets\PlayMaker\Actions\String\StringSplit.cs" />
      <Compile Include="Assets\PlayMaker\Actions\StringChanged.cs" />
      <Compile Include="Assets\PlayMaker\Actions\StringCompare.cs" />
      <Compile Include="Assets\PlayMaker\Actions\StringContains.cs" />
@@ -622,9 +657,13 @@
      <Compile Include="Assets\PlayMaker\Actions\iTween\iTweenShakeScale.cs" />
      <Compile Include="Assets\PlayMaker\Actions\iTween\iTweenStop.cs" />
      <Compile Include="Assets\PlayMaker\Include\iTweenFSMEvents.cs" />
+     <Compile Include="Assets\PlayMaker\UpdateHelper.cs" />
+     <Compile Include="Assets\head_scroll.cs" />
      <Compile Include="Assets\iTween\iTween.cs" />
+     <Compile Include="Assets\toggle_image.cs" />
      <None Include="Assets\Cardboard\Resources\SkyboxMesh.shader" />
      <None Include="Assets\Cardboard\Distortion\CardboardDistortion.cginc" />
+     <None Include="Assets\PlayMaker\Templates\readme.txt" />
      <None Include="Assets\PlayMaker\Readme.txt" />
      <None Include="Assets\Cardboard\Resources\UnlitTexture.shader" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
@@ -632,14 +671,18 @@
      <None Include="Assets\PlayMaker\Resources\PlayMakerAssemblies.txt" />
      <None Include="Assets\Cardboard\Resources\UI\CardboardReticleShader.shader" />
      <None Include="Assets\Cardboard\Resources\SolidColor.shader" />
- <Reference Include="UnityEngine.Networking">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
+     <None Include="Assets\PlayMaker\Versions\readme.txt" />
  <Reference Include="UnityEngine.UI">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="ConditionalExpression">
+ <HintPath>C:/Users/Juhi/Desktop/notes/sem 4/vimd/project/VR-Timeline/Demo/Assets/PlayMaker/ConditionalExpression.dll</HintPath>
  </Reference>
  <Reference Include="PlayMaker">
- <HintPath>/Users/ColleenHutson/Desktop/Spring 2016/CSC 495/UnityDemo/Demo/Assets/Plugins/PlayMaker/PlayMaker.dll</HintPath>
+ <HintPath>C:/Users/Juhi/Desktop/notes/sem 4/vimd/project/VR-Timeline/Demo/Assets/Plugins/PlayMaker/PlayMaker.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
