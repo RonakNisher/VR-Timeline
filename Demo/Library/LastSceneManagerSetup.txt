@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/title scene.unity
+- path: Assets/Scenes/Timeline Strip.unity
   isLoaded: 1
   isActive: 1
