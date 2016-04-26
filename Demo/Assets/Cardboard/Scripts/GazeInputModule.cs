@@ -222,9 +222,9 @@ public class GazeInputModule : BaseInputModule {
 //				position.y -= a;
 //				currentGazeObject.transform.position = position;
 				//currentGazeObject.SetActive(false);
-				//Debug.Log(currentGazeObject.transform.parent.tag);
+				//Debug.Log(currentGazeObject.transform.tag);
 
-				if (currentGazeObject.transform.parent.tag == "button") {
+				if (currentGazeObject.transform.parent && currentGazeObject.transform.parent.tag == "button") {
 					if (timer == MAX_TIME) {
 						//Debug.Log(timer);
 						//Debug.Log (MAX_TIME);

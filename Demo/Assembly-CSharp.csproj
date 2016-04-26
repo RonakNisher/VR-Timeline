@@ -72,10 +72,10 @@
      <Compile Include="Assets\Cardboard\Scripts\VRDevices\CardboardAndroidDevice.cs" />
      <Compile Include="Assets\Cardboard\Scripts\VRDevices\CardboardiOSDevice.cs" />
      <Compile Include="Assets\Cardboard\Scripts\VRDevices\UnityEditorDevice.cs" />
-     <Compile Include="Assets\CurvedUI\Scripts\CurvedUIRaycaster.cs" />
-     <Compile Include="Assets\CurvedUI\Scripts\CurvedUISettings.cs" />
-     <Compile Include="Assets\CurvedUI\Scripts\CurvedUIVertexEffect.cs" />
-     <Compile Include="Assets\CurvedUI\Scripts\Experimental\CurvedUITMP.cs" />
+     <Compile Include="Assets\Gizmos\CurvedUI\Scripts\CurvedUIRaycaster.cs" />
+     <Compile Include="Assets\Gizmos\CurvedUI\Scripts\CurvedUISettings.cs" />
+     <Compile Include="Assets\Gizmos\CurvedUI\Scripts\CurvedUIVertexEffect.cs" />
+     <Compile Include="Assets\Gizmos\CurvedUI\Scripts\Experimental\CurvedUITMP.cs" />
      <Compile Include="Assets\PlayMaker\Actions\ActivateGameObject.cs" />
      <Compile Include="Assets\PlayMaker\Actions\AddAnimationClip.cs" />
      <Compile Include="Assets\PlayMaker\Actions\AddComponent.cs" />
