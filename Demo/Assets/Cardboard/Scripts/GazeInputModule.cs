@@ -224,7 +224,7 @@ public class GazeInputModule : BaseInputModule {
 				//currentGazeObject.SetActive(false);
 				//Debug.Log(currentGazeObject.transform.tag);
 
-				if (currentGazeObject.transform.parent && currentGazeObject.transform.parent.tag == "button") {
+				if (currentGazeObject.transform.parent.tag == "button") {
 					if (timer == MAX_TIME) {
 						//Debug.Log(timer);
 						//Debug.Log (MAX_TIME);

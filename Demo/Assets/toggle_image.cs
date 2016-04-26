@@ -7,7 +7,7 @@ public class toggle_image : MonoBehaviour {
 	private bool show;
 	// Use this for initialization
 	void Start () {
-		show = true;
+		show = false;
 	}
 	
 	// Update is called once per frame

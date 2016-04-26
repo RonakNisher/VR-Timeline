@@ -22,7 +22,7 @@ public class head_scroll : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (transform.position.x > -5250 && transform.position.x < 5250) {
+		//if (transform.position.x > -5250 && transform.position.x < 5250) {
 //        transform.position += speed * head.Gaze.direction;
 			if (Math.Abs (head.Gaze.direction.x) > threshold3) {
 				Vector3 position = transform.position;
@@ -40,19 +40,19 @@ public class head_scroll : MonoBehaviour {
 				transform.position = position;
 			}
 
-		} else if (transform.position.x <= -5250)
-		{
+		//} else if (transform.position.x <= -5250)
+		//{
 			//Debug.Log (transform.position.x);
-			Vector3 position = transform.position;
-			position.x = -5200;
-			transform.position = position;
-		}
-		else if (transform.position.x >= 5250)
-		{
+			//Vector3 position = transform.position;
+			//position.x = -5200;
+			//transform.position = position;
+		//}
+		//else if (transform.position.x >= 5250)
+		//{
 			//Debug.Log (transform.position.x);
-			Vector3 position = transform.position;
-			position.x = 5200;
-			transform.position = position;
-		}
+			//Vector3 position = transform.position;
+			//position.x = 5200;
+			//transform.position = position;
+		//}
     }
 }
